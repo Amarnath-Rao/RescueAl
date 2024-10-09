@@ -1,0 +1,158 @@
+body {
+  background-color: #0B0C10;
+  color: #66FCF1;
+}
+
+::-webkit-scrollbar {
+  width: 12px;               
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #66FCF1;    /* Color of the scrollbar thumb */
+  border-radius: 10px;      /* Optional: border around the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #037B73; 
+  border-radius: 10px;       /* Rounded corners */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold;
+  font-size: 80px;
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 120px);
+  gap: 20px;
+}
+
+.chat-box {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #66FCF1;
+  border-radius: 10px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  font-family: 'Outfit', monospace;
+}
+
+.message.user {
+  background-color: #1F2833;
+  align-self: flex-end;
+}
+
+.message.ai {
+  background-color: #66FCF1;
+  color: BLACK;
+}
+
+.input-container {
+  display: flex;
+  background-color: #1F2833;
+  border-top: 3px solid #66FCF1;
+  border-radius: 5px;
+}
+
+.input {
+  flex: 1;
+  font-family: 'Outfit', monospace;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+  background-color: transparent;
+  color: #66FCF1;
+  resize: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: #66FCF1;
+  opacity: 0.5;
+}
+
+button {
+  background-color: #45A29E;
+  color: #0B0C10;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.info-box {
+  flex: 1;
+  border: 3px solid #66FCF1;
+  font-family: 'Outfit', monospace;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.audio-play {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.button{
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button img{
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease;
+}
+
+.clear{
+  border: #66FCF1, solid, 3px;
+  border-radius: 5px;
+  background-color: black;
+  font-family: 'Outfit', monospace;
+  color: #66FCF1;
+  margin: 0;
+}
+
+.clear:hover{
+  color: black;
+  background-color: #66FCF1;
+}
